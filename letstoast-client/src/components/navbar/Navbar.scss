@@ -1,0 +1,77 @@
+@import '../../letstoast.scss';
+
+.navbar-menu-absolute {
+  position: absolute;
+  right: 0;
+}
+
+.navbar-menu-color {
+  background-color: $default-background-color;
+}
+
+.navbar-item-color {
+  color: $default-text-color;
+  text-shadow: 1px 1px $default-shadow-color;
+}
+
+.navbar.is-link .navbar-end > a.navbar-item:hover {
+  color: $default-link-color;
+  text-shadow: 1px 1px $default-shadow-color;
+  background-color: $default-background-color;
+}
+
+a.navbar-item:hover {
+  text-shadow: 1px 1px $default-shadow-color;
+  background-color: $default-background-color;
+  color: $default-link-color;
+}
+
+.navbar-title {
+  @include for-size(phone-only) {
+    font-size: 20px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 24px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 26px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 28px;
+  }
+}
+
+.navbar-text {
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}
+
+.navbar.is-link .navbar-brand > a.navbar-item:hover {
+  text-shadow: 1px 1px $default-shadow-color;
+  background-color: $default-background-color;
+  color: $default-link-color;
+}

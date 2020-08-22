@@ -1,0 +1,88 @@
+@import '../../letstoast.scss';
+
+.message {
+  background-color: $default-message-background-color;
+  padding-bottom: 5px;
+  display: none;
+
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}
+
+.message-component {
+  position: fixed !important;
+  z-index: 100;
+  color: $default-text-color;
+  text-shadow: 1px 1px $default-shadow-color;
+  background-color: $default-message-background-color;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  outline-width: 0px !important;
+}
+
+.message-component .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.message-component .ui-dialog-titlebar {
+  display: none;
+}
+
+.message:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.message-button {
+  background-color: $default-message-background-color;
+  border: none;
+  color: white;
+  outline-width: 0px !important;
+
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}
+
+.message-overlay
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.3);
+}

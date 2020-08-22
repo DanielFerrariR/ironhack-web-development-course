@@ -1,0 +1,157 @@
+@import '../../../letstoast.scss';
+
+.chat-button {
+  margin-top: 20px;
+
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}
+
+.chat-component {
+  padding-top: 20px;
+}
+
+.chat-container {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0 20px 0 20px;
+  height: 50vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.chat-input {
+  margin-top: 20px;
+}
+
+.chat-picture {
+  border-radius: 50%;
+  margin-right: 20px;
+
+  @include for-size(phone-only) {
+    width: 32px;
+    height: 32px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    width: 32px;
+    height: 32px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    width: 32px;
+    height: 32px;
+  }
+
+  @include for-size(desktop-up) {
+    width: 32px;
+    height: 32px;
+  }
+
+  @include for-size(big-desktop-up) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.chat-targetuser-info {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.chat-targetuser-name {
+  color: $default-text-color;
+  text-shadow: 1px 1px $default-shadow-color;
+
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}
+
+.chat-message {
+  color: $default-text-color;
+  text-shadow: 1px 1px $default-shadow-color;
+
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}
+
+.chat-error-message {
+  color: $default-text-color;
+  text-shadow: 1px 1px $default-shadow-color;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}

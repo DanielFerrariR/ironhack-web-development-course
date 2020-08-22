@@ -1,0 +1,54 @@
+@import '../../letstoast.scss';
+
+.tab-global {
+  overflow-x: hidden;
+}
+
+.tab-global:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.tabs a:hover {
+  color: $default-text-color;
+  text-shadow: 1px 1px $default-shadow-color;
+  border-bottom-color: $default-text-color;
+}
+
+.tabs a {
+  text-shadow: 1px 1px $default-shadow-color;
+  color: $default-text-color;
+  border-bottom-color: $default-background-color;
+}
+
+.tabs li.is-active a {
+  text-shadow: 1px 1px $default-shadow-color;
+  color: $default-link-color;
+  border-bottom-color: $default-link-color;
+}
+
+.tabs ul {
+  border-bottom-color: $default-background-color;
+}
+
+.tabs {
+
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,139 @@
+@import '../../../letstoast.scss';
+
+.profile-picture {
+  border-radius: 50%;
+  margin-top: 20px;
+
+  @include for-size(phone-only) {
+    width: 128px;
+    height: 128px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    width: 144px;
+    height: 144px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    width: 160px;
+    height: 160px;
+  }
+
+  @include for-size(desktop-up) {
+    width: 176px;
+    height: 176px;
+  }
+
+  @include for-size(big-desktop-up) {
+    width: 192px;
+    height: 192px;
+  }
+}
+
+.profile-component {
+  padding-bottom: 20px;
+}
+
+.profile-label {
+  color: $default-text-color;
+  text-shadow: 1px 1px $default-shadow-color;
+
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}
+
+.profile-upload {
+  margin-top: 20px;
+  
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}
+
+.profile-status {
+  color: $default-pending-status-color;
+}
+
+.profile-input {
+  @include for-size(phone-only) {
+    width: 300px;
+    margin: auto;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    width: 450px;
+    margin: auto;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    width: 600px;
+    margin: auto;
+  }
+
+  @include for-size(desktop-up) {
+    width: 750px;
+    margin: auto;
+  }
+
+  @include for-size(big-desktop-up) {
+    width: 900px;
+    margin: auto;
+  }
+}
+
+.profile-button {
+  margin-top: 20px;
+
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}

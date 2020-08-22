@@ -1,0 +1,9 @@
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/sass/utilities/functions";
+@import "./letstoast.scss";
+
+$family-sans-serif: $default-font;
+$body-background-color: $default-background-color;
+$primary: $bulma-primary-color;
+
+@import "node_modules/bulma/bulma.sass";

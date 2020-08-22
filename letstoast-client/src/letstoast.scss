@@ -1,0 +1,41 @@
+// default app colors and font
+$default-background-color: #0074D9;
+$default-font: 'Merienda', cursive;
+$default-text-color: white;
+$default-link-color: #00d1b2;
+$default-link-hover-color: #00bda0;
+$default-shadow-color: grey;
+$default-pending-status-color: #00d1b2;
+$default-message-background-color: #00d1b2;
+$bulma-primary-color: #00D1B2; //button and border input
+
+//Contact box
+$refuse-color: #DC143C;
+$accept-color: #00d1b2;
+$box-color: white;
+$box-name-color: black;
+$box-interest-color: rgba(0,0,0, 0.7);
+
+// media queries
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
+
+  @if $range == phone-only {
+    @media (max-width: $phone-upper-boundary) { @content; }
+
+  } @else if $range == tablet-portrait-up {
+    @media (min-width: $phone-upper-boundary) { @content; }
+
+  } @else if $range == tablet-landscape-up {
+    @media (min-width: $tablet-portrait-upper-boundary) { @content; }
+
+  } @else if $range == desktop-up {
+    @media (min-width: $tablet-landscape-upper-boundary) { @content; }
+    
+  } @else if $range == big-desktop-up {
+    @media (min-width: $desktop-upper-boundary) { @content; }
+  }
+}

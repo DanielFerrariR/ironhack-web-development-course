@@ -1,0 +1,92 @@
+@import '../../../letstoast.scss';
+
+.email-confirmation-title {
+  color: $default-text-color;
+  text-shadow: 1px 1px $default-shadow-color;
+  margin-bottom: 40px;
+
+  @include for-size(phone-only) {
+    font-size: 48px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 54px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 60px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 66px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 72px;
+  }
+}
+
+.email-confirmation-link-div {
+  margin-top: 40px;
+}
+
+.email-confirmation-link {
+  text-shadow: 1px 1px $default-shadow-color;
+  color: $default-link-color;
+
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}
+
+.email-confirmation-link:hover {
+  color: $default-link-hover-color;
+}
+
+.email-confirmation-component {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-confirmation-message {
+  color: $default-text-color;
+  text-shadow: 1px 1px $default-shadow-color;
+
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 20px;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 22px;
+  }
+
+  @include for-size(big-desktop-up) {
+    font-size: 24px;
+  }
+}
