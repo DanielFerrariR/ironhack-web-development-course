@@ -13,7 +13,7 @@ All projects from Ironhack Web Development Course
 
 ## Course link
 
-https://www.ironhack.com
+https://www.ironhack.com/en/web-development
 
 ## Certificate
 
